@@ -17,7 +17,7 @@ export function SiteHeader() {
           <span>FlyRank</span>
           <span className="ml-1 hidden rounded-full bg-primary-soft px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-primary-strong sm:inline">Workspace</span>
         </Link>
-        <nav aria-label="Main navigation" className="-mx-1 flex flex-wrap gap-1 px-1 md:mx-0 md:flex-nowrap">
+        <nav aria-label="Main navigation" className="flex w-full flex-wrap gap-1 md:w-auto md:flex-nowrap">
           {navigation.map(({ href, label }) => (
             <Link
               key={href}

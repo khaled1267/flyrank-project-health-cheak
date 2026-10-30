@@ -74,7 +74,7 @@ export function HealthStatus() {
       <div className="p-card sm:p-10">
         {state.kind === "loading" && (
           <div className="rounded-card border border-border bg-surface-muted p-5 sm:p-6">
-            <p className="text-sm font-medium text-text-primary">Checking application health…</p>
+            <p className="text-sm font-medium text-text-primary">Checking application health...</p>
             <p className="mt-1 text-sm leading-6 text-text-muted">Requesting the latest status from the server.</p>
           </div>
         )}
@@ -104,7 +104,7 @@ export function HealthStatus() {
               </div>
               <div>
                 <dt className="text-xs font-medium uppercase tracking-wide text-text-muted">Server timestamp</dt>
-                <dd className="mt-1 break-words text-sm font-medium text-text-primary">
+                <dd className="mt-1 min-w-0 break-words text-sm font-medium text-text-primary [overflow-wrap:anywhere]">
                   <time dateTime={state.data.timestamp}>{state.data.timestamp}</time>
                 </dd>
               </div>
