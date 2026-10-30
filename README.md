@@ -16,6 +16,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Environment variables
+
+Copy `.env.example` to `.env.local` and replace its example values with your local configuration. Keep `.env.local` and any real credentials private; only add server-side variables without the `NEXT_PUBLIC_` prefix. The committed `.env.example` contains placeholders only.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
